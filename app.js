@@ -13,7 +13,7 @@ function bootCamara()
     .then(function(stream) 
         {
             track = stream.getTracks()[0];
-            cameraView.srcObject = stream;
+            vistaCamara.srcObject = stream;
         })
         .catch(function(error) {
             console.error("Algo salio mal", error);
