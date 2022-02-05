@@ -4,7 +4,7 @@ var constraints = {
 const vistaCamara= document.querySelector("#vista-camara"),
       salidaCamara= document.querySelector("#salida-camara"),
       sensorCamara= document.querySelector("sensor-camara"),
-      botonfoto= doccument.querySelector("#boton-foto");
+      botonfoto= document.querySelector("#boton-foto");
 
 function bootCamara() 
 {
@@ -14,6 +14,9 @@ function bootCamara()
         {
             track = stream.getTracks()[0];
             cameraView.srcObject = stream;
+        })
+        .catch(function(error) {
+            console.error("Algo salio mal", error);
         });
 }
 

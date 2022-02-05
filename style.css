@@ -5,17 +5,17 @@ html, body{
   width: 100%;
 }
 
-#camera, #camera--view, #camera--sensor, #camera--output{
+#camara, #vista-camara, #sensor-camara, #salida-camara{
     position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#camera--view, #camera--sensor, #camera--output{
+#vista-camara, #sensor-camara, #salida-camara{
     transform: scaleX(-1);
     filter: FlipH;
 }
-#camera--trigger{
+#boton-foto{
     width: 200px;
     background-color: black;
     color: white;
