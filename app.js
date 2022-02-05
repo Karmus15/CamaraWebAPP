@@ -1,6 +1,9 @@
 var constraints = {
-                   video: { facingmode: "environment"}, audio: false 
-                  };
+                   video: { 
+                       facingMode: {exact:'environment'}
+                          }
+                  ,audio: false
+                };
 const vistaCamara= document.querySelector("#vista-camara"),
       salidaCamara= document.querySelector("#salida-camara"),
       sensorCamara= document.querySelector("sensor-camara"),
