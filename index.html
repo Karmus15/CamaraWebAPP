@@ -15,14 +15,16 @@
         <main id="camara">
             <canvas id="sensor-camara"></canvas>
 
+
             <video id="vista-camara" autoplay playsinline></video>
+
 
             <img src="//:0" alt="" id="salida-camara">
 
             <button id="boton-foto">Sacar foto</button>         
         </main>
         <!-- Import TensorFlow.js library -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
             <!-- Load the coco-ssd model to use to recognize things in images -->
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
         <script src="app.js"></script>
