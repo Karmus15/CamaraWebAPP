@@ -27,9 +27,21 @@ function bootCamara()
 botonfoto.addEventListener('click', tomarFoto);
 
 
+
 function tomarFoto()
 {
   console.log("test")
+
+    
+    sensorCamara.width = cameraView.videoWidth;
+    sensorCamara.height = cameraView.videoHeight;
+    sensorCamara.getContext("2d").drawImage(cameraView, 0, 0);
+    salidaCamara.src = cameraSensor.toDataURL("image/png");
+
+
+    var formData = new FormData();
+    formData.append("imagen", salidaCamara.src);
+
   fetch('http://192.168.0.107:5000/predict/', {
     method: 'POST',
      })
