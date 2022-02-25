@@ -6,7 +6,7 @@ var constraints = {
                 };
 const vistaCamara= document.querySelector("#vista-camara"),
       salidaCamara= document.querySelector("#salida-camara"),
-      sensorCamara= document.querySelector("sensor-camara"),
+      sensorCamara= document.querySelector("#sensor-camara"),
       botonfoto= document.querySelector("#boton-foto");
       
 
@@ -38,7 +38,7 @@ function tomarFoto()
     sensorCamara.getContext("2d").drawImage(vistaCamara, 0, 0);
     salidaCamara.src = sensorCamara.toDataURL("image/png");
 
-
+    console.log(salidaCamara)
     var formData = new FormData();
     formData.append("imagen", salidaCamara.src);
 
