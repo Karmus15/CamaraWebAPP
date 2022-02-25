@@ -44,6 +44,7 @@ function tomarFoto()
 
   fetch('http://192.168.0.107:5000/predict/', {
     method: 'POST',
+    body: formData,
      })
 .then(response => response.json())
 .then(data => console.log(data));
