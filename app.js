@@ -33,10 +33,10 @@ function tomarFoto()
   console.log("test")
 
     
-    sensorCamara.width = cameraView.videoWidth;
-    sensorCamara.height = cameraView.videoHeight;
-    sensorCamara.getContext("2d").drawImage(cameraView, 0, 0);
-    salidaCamara.src = cameraSensor.toDataURL("image/png");
+    sensorCamara.width = vistaCamara.videoWidth;
+    sensorCamara.height = vistaCamara.videoHeight;
+    sensorCamara.getContext("2d").drawImage(vistaCamara, 0, 0);
+    salidaCamara.src = sensorCamara.toDataURL("image/png");
 
 
     var formData = new FormData();
