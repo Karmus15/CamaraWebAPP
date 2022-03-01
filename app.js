@@ -30,7 +30,6 @@ botonfoto.addEventListener('click', tomarFoto);
 
 function tomarFoto()
 {
-  console.log("test")
 
     
     sensorCamara.width = vistaCamara.videoWidth;
@@ -38,16 +37,16 @@ function tomarFoto()
     sensorCamara.getContext("2d").drawImage(vistaCamara, 0, 0);
     salidaCamara.src = sensorCamara.toDataURL("image/png");
 
-    console.log(salidaCamara)
+    //console.log(salidaCamara)
     var formData = new FormData();
     formData.append("imagen", salidaCamara.src);
 
-  fetch('http://192.168.0.107:5000/predict/', {
+  fetch('https://karmus15-premierapi.herokuapp.com/predict/', {
     method: 'POST',
     body: formData,
      })
 .then(response => response.json())
-.then(data => console.log(data));
+.then(data => window.alert(data));
 
 
 }
