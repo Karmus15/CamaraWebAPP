@@ -65,6 +65,7 @@ function mostrarCamara()
     salidaCamara.src = "//:0";
     salidaCamara.alt = "";
     salidaCamara.id = "salida-camara";
+    camaraID.insertBefore(salidaCamara, camaraID.firstChild);
     //sensorCamara.getContext("2d").clearRect(0, 0, vistaCamara.videoWidth, vistaCamara.videoHeight);
 }
 
