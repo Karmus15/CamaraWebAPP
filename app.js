@@ -211,8 +211,8 @@ async function premierWindow()
         rankTeam.innerHTML = i+1;
         let imageTableTeam  = document.createElement("img");
         imageTableTeam.src = dataResponsePos[0].league.standings[0][i].team.logo;
-        imageTableTeam.setAttribute('width', 40);
-        imageTableTeam.setAttribute('height', 40);
+        imageTableTeam.setAttribute('width', 42);
+        imageTableTeam.setAttribute('height', 42);
         let nameTeam= document.createElement("td");
         nameTeam.appendChild(imageTableTeam);
         nameTeam.innerHTML += " " + dataResponsePos[0].league.standings[0][i].team.name;
