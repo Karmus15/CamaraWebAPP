@@ -211,8 +211,8 @@ async function premierWindow()
         rankTeam.innerHTML = i+1;
         let imageTableTeam  = document.createElement("img");
         imageTableTeam.src = dataResponsePos[0].league.standings[0][i].team.logo;
-        imageTableTeam.setAttribute('width', 50);
-        imageTableTeam.setAttribute('height', 50);
+        imageTableTeam.setAttribute('width', 25);
+        imageTableTeam.setAttribute('height', 25);
         let nameTeam= document.createElement("td");
         nameTeam.appendChild(imageTableTeam);
         nameTeam.innerHTML += " " + dataResponsePos[0].league.standings[0][i].team.name;
@@ -243,8 +243,8 @@ async function premierWindow()
         numberPlayer.innerHTML = dataresponse[0].players[i].number;
         let imagePlayer = document.createElement("img");
         imagePlayer.src = dataresponse[0].players[i].photo;
-        imagePlayer.setAttribute('width', 50);
-        imagePlayer.setAttribute('height', 50);
+        imagePlayer.setAttribute('width', 20);
+        imagePlayer.setAttribute('height', 20);
         let namePlayer = document.createElement("td");
         namePlayer.appendChild(imagePlayer);
         namePlayer.innerHTML += " " + dataresponse[0].players[i].name;
@@ -265,7 +265,7 @@ async function premierWindow()
 //var teamTag = document.createElement("p");
 let imageTeam = document.createElement("img");
 imageTeam.src = dataresponse[0].team.logo;  //response[0].team.logo
-imageTeam.style = "max-width: 100%; max-height: 100%; width: 150px; height: 150px"
+imageTeam.style = "position:relative ;top:5px; max-width: 100%; max-height: 100%; width: 75px; height: 75px"
 
 var teamName = document.createTextNode(dataresponse[0].team.name)
 
@@ -273,7 +273,7 @@ var teamName = document.createTextNode(dataresponse[0].team.name)
 
 var teamTag = document.createElement("p");
 teamTag.id = "titulo-equipo"
-teamTag.style = "position:relative; text-align: center; width: 100%"
+teamTag.style = "position:relative;top:5px; text-align: center; width: 100%"
 
 
 divbox.style.visibility = "visible";
