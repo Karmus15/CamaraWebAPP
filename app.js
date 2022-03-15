@@ -8,6 +8,7 @@ var   camaraID = document.getElementById("camara"),
       vistaCamara= document.querySelector("#vista-camara"),
       salidaCamara= document.getElementById("salida-camara"),
       sensorCamara= document.querySelector("#sensor-camara"),
+      interfaceID = document.getElementById("interface");
       botonfoto= document.querySelector("#boton-foto");
       tablaLiga = document.getElementById("tabla-liga");
       tablaPlantilla = document.getElementById("tabla-plantilla");
@@ -59,13 +60,16 @@ function mostrarCamara()
     divbox.style.visibility = "hidden";
     tablaPlantilla.style.visibility = "hidden";
     tablaLiga.style.visibility = "hidden";
-    camaraID.removeChild(salidaCamara);
+    salidaCamara.src = null;
+    salidaCamara.src = "//:0";
+    
+  /*  camaraID.removeChild(salidaCamara);
     let salidaCamara = document.createElement("img");
     salidaCamara.src = "";
     salidaCamara.src = "//:0";
     salidaCamara.alt = "";
     salidaCamara.id = "salida-camara";
-    camaraID.insertBefore(salidaCamara, camaraID.firstChild);
+    camaraID.insertBefore(salidaCamara, camaraID.interfaceID);*/
     //sensorCamara.getContext("2d").clearRect(0, 0, vistaCamara.videoWidth, vistaCamara.videoHeight);
 }
 
