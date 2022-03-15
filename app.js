@@ -4,7 +4,7 @@ var constraints = {
                           }
                   ,audio: false
                 };
-const vistaCamara= document.querySelector("#vista-camara"),
+var vistaCamara= document.querySelector("#vista-camara"),
       salidaCamara= document.querySelector("#salida-camara"),
       sensorCamara= document.querySelector("#sensor-camara"),
       botonfoto= document.querySelector("#boton-foto");
