@@ -4,8 +4,9 @@ var constraints = {
                           }
                   ,audio: false
                 };
-var vistaCamara= document.querySelector("#vista-camara"),
-      salidaCamara= document.querySelector("#salida-camara"),
+var   camaraID = document.getElementById("camara"),
+      vistaCamara= document.querySelector("#vista-camara"),
+      salidaCamara= document.getElementById("salida-camara"),
       sensorCamara= document.querySelector("#sensor-camara"),
       botonfoto= document.querySelector("#boton-foto");
       tablaLiga = document.getElementById("tabla-liga");
@@ -58,8 +59,13 @@ function mostrarCamara()
     divbox.style.visibility = "hidden";
     tablaPlantilla.style.visibility = "hidden";
     tablaLiga.style.visibility = "hidden";
+    camaraID.removeChild(salidaCamara);
+    let salidaCamara = document.createElement("img");
+    salidaCamara.src = "";
     salidaCamara.src = "//:0";
-    sensorCamara.getContext("2d").clearRect(0, 0, vistaCamara.videoWidth, vistaCamara.videoHeight);
+    salidaCamara.alt = "";
+    salidaCamara.id = "salida-camara";
+    //sensorCamara.getContext("2d").clearRect(0, 0, vistaCamara.videoWidth, vistaCamara.videoHeight);
 }
 
 
