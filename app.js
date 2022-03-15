@@ -59,6 +59,7 @@ function mostrarCamara()
     tablaPlantilla.style.visibility = "hidden";
     tablaLiga.style.visibility = "hidden";
     salidaCamara.src = "//:0";
+    sensorCamara.getContext("2d").clearRect(0, 0, vistaCamara.videoWidth, vistaCamara.videoHeight);
 }
 
 
