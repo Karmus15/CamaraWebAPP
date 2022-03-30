@@ -14,10 +14,12 @@ var   camaraID = document.getElementById("camara"),
       tablaPlantilla = document.getElementById("tabla-plantilla");
       botonPlantilla =document.getElementById("boton-plantilla");;
       botonLiga = document.getElementById("boton-liga");
-      resultGlob = ""
+      resultGlob = "";
+      probGlob = null;
       ulPlayers = document.getElementById("ul-players");
       ulTeams = document.getElementById("ul-teams");
       divbox = document.getElementById("caja-equipo");
+      divchance = document.getElementById("caja-chance");
       teamBox = document.getElementById("titulo-borde");          
 
 
@@ -58,6 +60,7 @@ function mostrarCamara()
 {
     console.log("mostrarcamara");
     divbox.style.visibility = "hidden";
+    divchance.style.visibility= "hidden";
     tablaPlantilla.style.visibility = "hidden";
     tablaLiga.style.visibility = "hidden";
     salidaCamara.src = null;
@@ -83,7 +86,9 @@ async function fetchEquipo(formData)
         body: formData,
     })
     let data = response.json()
-    resultGlob = await data;
+    result = await data;
+    resultGlob = result[0];
+    probGlob = result[1];
     return 1;     
 }
 
@@ -104,7 +109,8 @@ function tomarFoto()
     result = fetchEquipo(formData);
     result.then(()=>{
         //Promise Successful, Do something
-        premierWindow()
+        showChance();
+        
         }).catch(()=>{
         //Promise Failed, Do something
         console.log("no hubo respuesta");
@@ -143,9 +149,42 @@ function getTeamID(nameTeam)
     return dictTeamID[indexTeam].id
 }
 
+async function showChance()
+{
+    while (divchance.lastElementChild)  //limpio por si quedo texto antes
+    {
+        divchance.removeChild(divchance.lastElementChild);
+    }
+
+    if (probGlob < 0.5 || resultGlob == "unknown")
+    {
+    textoChance = document.createTextNode("No se encontro equipo \n(Prediccion:" + resultGlob + ", Nivel de confianza: " + (probGlob * 100).toFixed(2) + "%)");    
+    chanceTag = document.createElement("p");
+    chanceTag.style = "font-size: 21px;color:white"
+    chanceTag.innerText = textoChance.textContent;
+    divchance.appendChild(chanceTag);
+    divchance.style.visibility= "visible";
+    }else
+    {
+    textoChance = document.createTextNode("Prediccion:" + resultGlob + ", Nivel de confianza: " + (probGlob * 100).toFixed(2) + "%");    
+    chanceTag = document.createElement("p");
+    botonContinuar = document.createElement("button");
+    botonContinuar.innerText = "Continuar";
+    botonContinuar.style="background-color: white !important;color:black;font-size: 16px";
+    botonContinuar.addEventListener('click', premierWindow);
+    chanceTag.style = "font-size: 21px;color:white"
+    chanceTag.innerText = textoChance.textContent;
+    divchance.appendChild(chanceTag);
+    divchance.appendChild(botonContinuar);
+    divchance.style.visibility= "visible";
+    //premierWindow();
+    }
+    
+}
+
+
 async function premierWindow()
 {
-   
     teamid = getTeamID(resultGlob);
 
     
