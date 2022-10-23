@@ -156,7 +156,7 @@ async function showChance()
         divchance.removeChild(divchance.lastElementChild);
     }
 
-    if (probGlob < 0.5 || resultGlob == "unknown")
+    if (probGlob < 0.5 || resultGlob == "Desconocido")
     {
     textoChance = document.createTextNode("No se encontro equipo \n(Prediccion:" + resultGlob + ", Nivel de confianza: " + (probGlob * 100).toFixed(2) + "%)");    
     chanceTag = document.createElement("p");
@@ -185,6 +185,7 @@ async function showChance()
 
 async function premierWindow()
 {
+    divchance.style.visibility= "hidden"
     teamid = getTeamID(resultGlob);
 
     
@@ -198,7 +199,7 @@ async function premierWindow()
           }
     })
     
-   let responsePosiciones = await fetch ('https://v3.football.api-sports.io/standings?league=39&season=2021',
+   let responsePosiciones = await fetch ('https://v3.football.api-sports.io/standings?league=39&season=2022',
     {
         method: 'GET',
        // params: {name: 'Liverpool'},
