@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T21:57:12.173Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="pvZLQm8w9AGfh6QHwMV5" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-14T22:06:39.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42" etag="sy2nsEBMCcHVQ39zf_Tc" version="20.5.3" type="github">
   <diagram id="_PR5rB8g3A7-WBQryCZw" name="Page-1">
     <mxGraphModel dx="2901" dy="2174" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -179,22 +179,28 @@
           <mxGeometry x="25" y="35" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-3" value="HTTP POST" style="swimlane;" vertex="1" parent="1">
-          <mxGeometry x="-930" y="-350" width="160" height="70" as="geometry" />
+          <mxGeometry x="-930" y="-350" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="aQJiSQy_MHR7cHqMsdCa-4" value="headers&lt;br&gt;endpoint" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-3">
-          <mxGeometry x="45" y="30" width="70" height="40" as="geometry" />
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-4" value="headers&lt;br&gt;API Football Endpoint" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-3">
+          <mxGeometry x="10" y="30" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-6" value="API Sports" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="-940" y="-680" width="180" height="210" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-13" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-6">
-          <mxGeometry x="63" y="45" width="50" height="30" as="geometry" />
+          <mxGeometry x="63" y="110" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-23" value="Cuenta del sistema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-6">
-          <mxGeometry x="23" y="75" width="130" height="30" as="geometry" />
+          <mxGeometry x="23" y="170" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-30" value="Dashboard" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-6">
-          <mxGeometry x="48" y="105" width="80" height="30" as="geometry" />
+          <mxGeometry x="48" y="80" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-32" value="API Football Endpoints" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-6">
+          <mxGeometry x="15" y="40" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-33" value="Servidores API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-6">
+          <mxGeometry x="40" y="140" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-15" value="GET" style="swimlane;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="-720" y="-680" width="160" height="70" as="geometry" />
@@ -203,28 +209,34 @@
           <mxGeometry x="15" y="35" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-17" value="headers" style="swimlane;" vertex="1" parent="1">
-          <mxGeometry x="-720" y="-550" width="160" height="70" as="geometry" />
+          <mxGeometry x="-707.5" y="-584" width="135" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="aQJiSQy_MHR7cHqMsdCa-19" value="ambos headers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-685" y="-515" width="110" height="30" as="geometry" />
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-35" value="x-rapidapi-host" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-17">
+          <mxGeometry x="17.5" y="24" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="aQJiSQy_MHR7cHqMsdCa-20" value="API Football" style="swimlane;" vertex="1" parent="1">
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-36" value="x-rapidapi-key" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-17">
+          <mxGeometry x="17.5" y="44" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-20" value="API Football Endpoints" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="-940" y="-950" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="aQJiSQy_MHR7cHqMsdCa-22" value="ligas jugadores etc" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-920" y="-895" width="120" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-24" value="Cuenta del sistema" style="swimlane;" vertex="1" parent="1">
-          <mxGeometry x="-1220" y="-680" width="180" height="210" as="geometry" />
+          <mxGeometry x="-1210" y="-680" width="180" height="210" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-25" value="Llave de solicitudes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-24">
-          <mxGeometry x="25" y="105" width="130" height="30" as="geometry" />
+          <mxGeometry x="25" y="170" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-27" value="Limite de solicitudes diario" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-24">
-          <mxGeometry x="10" y="45" width="160" height="30" as="geometry" />
+          <mxGeometry x="10" y="90" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aQJiSQy_MHR7cHqMsdCa-28" value="Solicitudes disponibles" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-24">
-          <mxGeometry x="20" y="75" width="140" height="30" as="geometry" />
+          <mxGeometry x="20" y="130" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-31" value="Suscripción activa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-24">
+          <mxGeometry x="30" y="60" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aQJiSQy_MHR7cHqMsdCa-34" value="Perfil" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="aQJiSQy_MHR7cHqMsdCa-24">
+          <mxGeometry x="65" y="30" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
